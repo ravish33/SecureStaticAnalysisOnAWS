@@ -1,0 +1,14 @@
+<Html>
+<h1>Register Page</h1>
+<body>
+<div align="center">
+<form action="../registerUser" method='POST'>
+  UserName: <input type="text" name="uname"'><br><h6>(Username should have only Uppercase, Lowercase, and Digits. Length: 5-20 characters)</h6>
+  Password: <input type="password" name="pwd"'><br><h6>(Password must have only Uppercase, Lowercase, one special character, and Digits. Min 8 char required.)</h6>
+ 
+  <input type="submit" value="Register">
+</form>
+<div>{{Error}}</div>
+</div>
+</body>
+</html>

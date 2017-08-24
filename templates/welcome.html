@@ -1,0 +1,30 @@
+<Html>
+<div><h1 align="center">Welcome Page</h1><div align = "right"><form action= "../logout" method = "POST" enctype=multipart/form-data><input type="submit" value="Logout" ><input type="hidden" value={{user}} name="user"></form></div>
+</div>
+<body>
+<div align="center">
+<div> Hello  {{user}} </div>
+<form action="../uploadFile" method='POST' enctype=multipart/form-data>
+  Upload file: <input type="file" value="Browse" name="File">
+  <input type="hidden" value={{user}} name="user">
+  <input type="submit" value="Upload a file">
+</form>
+{{Message}}
+
+</div>
+<table border = "1">
+<tr>
+<td>Rats Output</td>
+<td>FlowFinder output</td>
+</tr>
+<tr>
+<td>{{ratsOutPut}}</td>
+<td>{{flawfinderOutPut}}</td>
+</tr>
+</table>
+
+
+
+<a src="testing.html" />
+</body>
+</html>
